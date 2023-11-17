@@ -20,8 +20,12 @@ dependencies:
 
   # Base
   cupertino_icons: ^1.0.2
+  riverpod: ^2.4.6
+  hooks_riverpod: ^2.4.6
+  freezed: ^2.4.5
 
   # Firebase
+  logger: ^2.0.2+1
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +34,8 @@ dev_dependencies:
   # Base
   flutter_lints: ^2.0.0
   flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.4.6
+  riverpod_generator: ^2.3.6
 
 flutter:
   # The following line ensures that the Material Icons font is

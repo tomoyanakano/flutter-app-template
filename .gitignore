@@ -44,6 +44,5 @@ app.*.map.json
 /android/app/release
 
 **/android/app/src/main/res/mipmap*/
-
-**/android/app/google-services.json
-**/ios/GoogleService-Info.plist
+**/android/app/**/google-services.json
+**/ios/**/GoogleService-Info.plist

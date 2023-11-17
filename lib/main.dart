@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'package:flutter_app_template/src/utilities/logger/logger.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
-  runApp(const MyApp());
+  runZonedGuarded(() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Future.wait([
+      Firebase.initializeApp(),
+    ]);
+    runApp(const MyApp());
+  }, (error, stackTrace) {
+    logger.e(error.toString());
+    logger.e(stackTrace.toString());
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -40,7 +52,7 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
+  // that it has a State object (defined belowgit) that contains fields that affect
   // how it looks.
 
   // This class is the configuration for the state. It holds the values (in this

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_template/src/features/home/home_page.dart';
+import 'package:flutter_app_template/src/features/root/root.dart';
 import 'package:go_router/go_router.dart';
 
 part 'routes.g.dart';
@@ -35,6 +36,6 @@ class HomeRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const HomePage();
+    return Root(0);
   }
 }

@@ -32,6 +32,7 @@ dependencies:
   go_router: ^12.1.1
   go_router_builder: ^2.3.4
   firebase_messaging: ^14.7.4
+  firebase_storage: ^11.5.1
 
 dev_dependencies:
   flutter_test:

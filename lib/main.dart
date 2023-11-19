@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/src/theme/theme.dart';
 import 'dart:async';
 import 'package:flutter_app_template/src/utilities/logger/logger.dart';
 // import 'package:firebase_core/firebase_core.dart';
@@ -24,7 +25,9 @@ class _MaterialApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
+    final theme = ref.watch(themeProvider);
     return MaterialApp.router(
+      theme: theme,
       title: const String.fromEnvironment('appName'),
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,

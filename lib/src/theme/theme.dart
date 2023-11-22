@@ -7,6 +7,7 @@ part 'theme.g.dart';
 @riverpod
 ThemeData theme(Ref ref) {
   return ThemeData(
+    useMaterial3: true,
     primarySwatch: Colors.blue,
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );

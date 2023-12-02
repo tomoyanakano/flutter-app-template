@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/src/features/home/home_page.dart';
 import 'package:flutter_app_template/src/features/root/root.dart';
+import 'package:flutter_app_template/src/features/snack_bar/snack_bar_handler.dart';
 import 'package:go_router/go_router.dart';
 
 part 'routes.g.dart';
@@ -25,6 +25,7 @@ class ShellRoute extends ShellRouteData {
   ) {
     return Stack(
       children: [
+        const SnackBarHandler(),
         navigator,
       ],
     );

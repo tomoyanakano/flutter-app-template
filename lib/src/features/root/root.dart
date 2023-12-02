@@ -9,7 +9,7 @@ class Root extends HookConsumerWidget {
 
   final List<Map<String, dynamic>> screens = [
     <String, dynamic>{
-      'screen': const SizedBox(),
+      'screen': const SizedBox (),
       'screenName': '',
     },
     <String, dynamic>{

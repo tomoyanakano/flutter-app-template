@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/src/features/force_update/presentation/force_update_dialog_handler.dart';
 import 'package:flutter_app_template/src/features/root/root.dart';
 import 'package:flutter_app_template/src/features/snack_bar/snack_bar_handler.dart';
 import 'package:go_router/go_router.dart';
@@ -26,6 +27,7 @@ class ShellRoute extends ShellRouteData {
     return Stack(
       children: [
         const SnackBarHandler(),
+        const ForceUpdateDialogHandler(),
         navigator,
       ],
     );

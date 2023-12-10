@@ -14,3 +14,8 @@ class PackageInfoPlusService {
 @Riverpod(keepAlive: true)
 PackageInfoPlusService packageInfoPlusService(Ref ref) =>
     PackageInfoPlusService(ref);
+
+@Riverpod(keepAlive: true)
+Future<PackageInfo> packageInfo(Ref ref) {
+  return ref.watch(packageInfoPlusServiceProvider).packageInfo;
+}

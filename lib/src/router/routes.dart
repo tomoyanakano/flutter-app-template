@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_template/src/features/force_update/presentation/force_update.dart';
 import 'package:flutter_app_template/src/features/maintenance/presentation/maintenance_dialog.dart';
+import 'package:flutter_app_template/src/features/notification/presentation/notification_handler.dart';
 import 'package:flutter_app_template/src/features/root/root.dart';
 import 'package:flutter_app_template/src/features/snack_bar/snack_bar_handler.dart';
 import 'package:flutter_app_template/src/utilities/app_tracking_transparency/app_tracking_transparency_handler.dart';
@@ -32,6 +33,7 @@ class ShellRoute extends ShellRouteData {
         const ForceUpdateDialog(),
         const SnackBarHandler(),
         const AppTrackingTransparencyHandler(),
+        const NotificationHandler(),
         navigator,
       ],
     );

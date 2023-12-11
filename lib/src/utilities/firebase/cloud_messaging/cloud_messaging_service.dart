@@ -36,6 +36,18 @@ class CloudMessagingService {
   }
 }
 
-@riverpod
+@Riverpod(keepAlive: true)
 CloudMessagingService cloudMessagingService(Ref ref) =>
     CloudMessagingService(ref, FirebaseMessaging.instance);
+
+@riverpod
+Future<RemoteMessage?> initialMessage(Ref ref) =>
+    ref.watch(cloudMessagingServiceProvider).getInitialMessage();
+
+@riverpod
+Stream<RemoteMessage> onMessageOpenedApp(Ref ref) =>
+    ref.watch(cloudMessagingServiceProvider).onMessageOpenedApp();
+
+@riverpod
+Future<AuthorizationStatus> notificationAutorizationStatus(Ref ref) =>
+    ref.watch(cloudMessagingServiceProvider).authorizationStatus();

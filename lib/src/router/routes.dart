@@ -5,6 +5,7 @@ import 'package:flutter_app_template/src/features/notification/presentation/noti
 import 'package:flutter_app_template/src/features/root/root.dart';
 import 'package:flutter_app_template/src/features/snack_bar/snack_bar_handler.dart';
 import 'package:flutter_app_template/src/utilities/app_tracking_transparency/app_tracking_transparency_handler.dart';
+import 'package:flutter_app_template/src/utilities/connectivity_plus/connectivity_handler.dart';
 import 'package:go_router/go_router.dart';
 
 part 'routes.g.dart';
@@ -34,6 +35,7 @@ class ShellRoute extends ShellRouteData {
         const SnackBarHandler(),
         const AppTrackingTransparencyHandler(),
         const NotificationHandler(),
+        const ConnectivityHandler(),
         navigator,
       ],
     );

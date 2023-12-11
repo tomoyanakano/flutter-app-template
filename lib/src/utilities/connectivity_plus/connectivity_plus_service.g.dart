@@ -7,12 +7,12 @@ part of 'connectivity_plus_service.dart';
 // **************************************************************************
 
 String _$connectivityPlusServiceHash() =>
-    r'70e3b121397b512b0b40ac3e65c6d3b0a6dd317f';
+    r'6a061e301231b9a661ad0aca760eac60fefa44f4';
 
 /// See also [connectivityPlusService].
 @ProviderFor(connectivityPlusService)
 final connectivityPlusServiceProvider =
-    AutoDisposeProvider<ConnectivityPlusService>.internal(
+    Provider<ConnectivityPlusService>.internal(
   connectivityPlusService,
   name: r'connectivityPlusServiceProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -22,7 +22,20 @@ final connectivityPlusServiceProvider =
   allTransitiveDependencies: null,
 );
 
-typedef ConnectivityPlusServiceRef
-    = AutoDisposeProviderRef<ConnectivityPlusService>;
+typedef ConnectivityPlusServiceRef = ProviderRef<ConnectivityPlusService>;
+String _$connectivityHash() => r'3ae8e51f2fda2a6092f1afbe4b2d319306ed21ca';
+
+/// See also [connectivity].
+@ProviderFor(connectivity)
+final connectivityProvider = StreamProvider<ConnectivityResult>.internal(
+  connectivity,
+  name: r'connectivityProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$connectivityHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef ConnectivityRef = StreamProviderRef<ConnectivityResult>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

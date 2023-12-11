@@ -15,6 +15,11 @@ class ConnectivityPlusService {
       Connectivity().checkConnectivity();
 }
 
-@riverpod
+@Riverpod(keepAlive: true)
 ConnectivityPlusService connectivityPlusService(Ref ref) =>
     ConnectivityPlusService(ref);
+
+@Riverpod(keepAlive: true)
+Stream<ConnectivityResult> connectivity(Ref ref) {
+  return ref.watch(connectivityPlusServiceProvider).onConnectivityChanged;
+}

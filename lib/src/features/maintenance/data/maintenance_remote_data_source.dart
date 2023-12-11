@@ -4,10 +4,10 @@ import 'package:flutter_app_template/src/utilities/firebase/cloud_firestore/clou
 import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'force_update_remote_data_source.g.dart';
+part 'maintenance_remote_data_source.g.dart';
 
-class ForceUpdateRemoteDataSource {
-  const ForceUpdateRemoteDataSource(this.ref);
+class MaintenanceRemoteDataSource {
+  const MaintenanceRemoteDataSource(this.ref);
   final Ref ref;
 
   CloudFirestorePath get cloudFirestorePath =>
@@ -15,12 +15,12 @@ class ForceUpdateRemoteDataSource {
   CloudFirestoreService get cloudFirestoreService =>
       ref.read(cloudFirestoreServiceProvider);
 
-  Stream<DocumentSnapshot<Map<String, dynamic>>> forceUpdateStream(String os) =>
+  Stream<DocumentSnapshot<Map<String, dynamic>>> meintenanceStream(String os) =>
       cloudFirestoreService.documentStream(
-        documentPath: cloudFirestorePath.forceUpdateDocumentPath(os),
+        documentPath: cloudFirestorePath.maintenanceDocumentPath(os),
       );
 }
 
 @riverpod
-ForceUpdateRemoteDataSource forceUpdateRemoteDataSource(Ref ref) =>
-    ForceUpdateRemoteDataSource(ref);
+MaintenanceRemoteDataSource maintenanceRemoteDataSource(Ref ref) =>
+    MaintenanceRemoteDataSource(ref);

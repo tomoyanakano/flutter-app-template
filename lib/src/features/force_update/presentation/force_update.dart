@@ -9,8 +9,8 @@ import 'package:flutter_app_template/src/utilities/url_launcher/url_launcher_ser
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class ForceUpdateDialogHandler extends HookConsumerWidget {
-  const ForceUpdateDialogHandler({
+class ForceUpdateDialog extends HookConsumerWidget {
+  const ForceUpdateDialog({
     super.key,
   });
 

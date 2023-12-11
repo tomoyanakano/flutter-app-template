@@ -3,7 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 part 'cloud_firestore_path.g.dart';
 
-enum PathDomain { users, forceUpdate }
+enum PathDomain { users, forceUpdate, maintenance }
 
 class CloudFirestorePath {
   // users
@@ -17,6 +17,13 @@ class CloudFirestorePath {
       '${PathDomain.forceUpdate.name}_$forceUpdateVersion';
   String forceUpdateDocumentPath(String operatingSystem) =>
       '$forceUpdateCollectionPath/$operatingSystem';
+
+  // maintenance
+  static const String maintenanceVersion = 'v1';
+  final String maintenanceCollectionPath =
+      '${PathDomain.maintenance.name}_$maintenanceVersion';
+  String maintenanceDocumentPath(String operationSystem) =>
+      '$maintenanceCollectionPath/$operationSystem';
 }
 
 @riverpod

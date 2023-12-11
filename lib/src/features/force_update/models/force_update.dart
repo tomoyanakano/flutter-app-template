@@ -3,7 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'force_update.freezed.dart';
 part 'force_update.g.dart';
 
-/// アップデート情報のモデル
 @freezed
 class ForceUpdate with _$ForceUpdate {
   const factory ForceUpdate({

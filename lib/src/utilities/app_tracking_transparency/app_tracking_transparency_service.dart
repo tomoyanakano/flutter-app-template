@@ -11,7 +11,6 @@ class AppTrackingTransparencyService {
   Future<TrackingStatus> get trackingAuthorizationStatus =>
       AppTrackingTransparency.trackingAuthorizationStatus;
 
-  /// ATTの許可をリクエスト
   Future<void> requestTrackingAuthorization() async {
     await AppTrackingTransparency.requestTrackingAuthorization();
   }
@@ -20,3 +19,8 @@ class AppTrackingTransparencyService {
 @riverpod
 AppTrackingTransparencyService appTrackingTransparencyService(Ref ref) =>
     AppTrackingTransparencyService(ref);
+
+@riverpod
+Future<TrackingStatus> trackingAuthorizationStatus(Ref ref) => ref
+    .read(appTrackingTransparencyServiceProvider)
+    .trackingAuthorizationStatus;

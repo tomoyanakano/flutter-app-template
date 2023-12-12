@@ -58,7 +58,7 @@ class FirebaseAuthService {
     }
   }
 
-  Future<void> convertEmailUserToPermanentAccount({
+  Future<void> convertAnonymousUserToPermanentUser({
     required String email,
     required String password,
   }) async {
@@ -96,6 +96,7 @@ class FirebaseAuthService {
       );
       return cred.user;
     } on FirebaseAuthException catch (e) {
+      print(e);
       _handleFirebaseAuthException(e);
       return null;
     } catch (e) {

@@ -105,6 +105,6 @@ class FirebaseAuthService {
   }
 }
 
-@riverpod
+@Riverpod(keepAlive: true)
 FirebaseAuthService firebaseAuthService(Ref ref) =>
     FirebaseAuthService(FirebaseAuth.instance);

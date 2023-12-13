@@ -65,6 +65,6 @@ class FirebaseAnalyticsService {
       );
 }
 
-@riverpod
+@Riverpod(keepAlive: true)
 FirebaseAnalyticsService firebaseAnalyticsService(Ref ref) =>
     FirebaseAnalyticsService(ref, FirebaseAnalytics.instance);

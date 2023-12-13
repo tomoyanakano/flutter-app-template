@@ -36,6 +36,7 @@ class _SignInFormState extends ConsumerState<SignInForm> {
           TextFormField(
             controller: passwordController,
             decoration: const InputDecoration(labelText: 'Password'),
+            obscureText: true,
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';

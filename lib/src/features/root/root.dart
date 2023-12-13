@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_template/src/features/auth/presentation/sign_up_form/sign_up_form.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -10,7 +9,7 @@ class Root extends HookConsumerWidget {
 
   final List<Map<String, dynamic>> screens = [
     <String, dynamic>{
-      'screen': const SignUpForm(),
+      'screen': const SizedBox(),
       'screenName': '',
     },
     <String, dynamic>{
@@ -36,7 +35,6 @@ class Root extends HookConsumerWidget {
     final state = useState(index);
 
     return Scaffold(
-      appBar: AppBar(),
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (value) {
           state.value = value;

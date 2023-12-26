@@ -25,43 +25,43 @@ class _SignUpFormState extends ConsumerState<SignUpForm> {
       child: Column(
         children: [
           TextFormField(
-            controller: emailController,
-            decoration: const InputDecoration(labelText: 'Email'),
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return 'Please enter some text';
-              }
-              return null;
-            }
-          ),
+              controller: emailController,
+              decoration: const InputDecoration(labelText: 'Email'),
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              }),
           TextFormField(
-            controller: passwordController,
-            decoration: const InputDecoration(labelText: 'Password'),
-            obscureText: true,
-            validator: (value) {
-              if (value == null || value.isEmpty) {
-                return 'Please enter some text';
-              }
-              return null;
-            }
-          ),
+              controller: passwordController,
+              decoration: const InputDecoration(labelText: 'Password'),
+              obscureText: true,
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              }),
           ElevatedButton(
-            onPressed: state.isLoading ? null : () {
-              if (_formKey.currentState != null && _formKey.currentState!.validate()) {
-                notifier.signUp(
-                  email: emailController.text,
-                  password: passwordController.text,
-                );
-              }
-            },
-            child: Center(
-              child: state.isLoading ? const CircularProgressIndicator() : const Text('Sign up'),
-            )
-          ),
+              onPressed: state.isLoading
+                  ? null
+                  : () {
+                      if (_formKey.currentState != null &&
+                          _formKey.currentState!.validate()) {
+                        notifier.signUp(
+                          email: emailController.text,
+                          password: passwordController.text,
+                        );
+                      }
+                    },
+              child: Center(
+                child: state.isLoading
+                    ? const CircularProgressIndicator()
+                    : const Text('Sign up'),
+              )),
         ],
-      ), 
+      ),
     );
   }
 }
-
-

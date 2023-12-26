@@ -50,3 +50,12 @@ class HomeRoute extends GoRouteData {
     return Root(0);
   }
 }
+
+class SettingsRoute extends GoRouteData {
+  const SettingsRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return Root(3);
+  }
+}

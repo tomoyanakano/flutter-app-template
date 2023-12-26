@@ -1,11 +1,9 @@
-
 import 'dart:async';
 
 import 'package:flutter_app_template/src/extensions/extensions.dart';
 import 'package:flutter_app_template/src/features/auth/application/auth_service.dart';
 import 'package:flutter_app_template/src/features/snack_bar/snack_bar_notifier.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-
 
 part 'sign_in_form_notifier.g.dart';
 
@@ -25,8 +23,8 @@ class SignInFormNotifier extends _$SignInFormNotifier {
     try {
       state = const AsyncLoading();
       await authService.signInWithEmailAndPassword(
-       email: email,
-       password: password,
+        email: email,
+        password: password,
       );
     } on Exception catch (e) {
       snackBarNotifier.setSnackBar(e.message);

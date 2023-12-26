@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_template/src/features/settings/presentation/settiongs_page.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -24,10 +25,6 @@ class Root extends HookConsumerWidget {
       'screen': const SizedBox(),
       'screenName': '',
     },
-    <String, dynamic>{
-      'screen': const SizedBox(),
-      'screenName': '',
-    }
   ];
 
   @override
@@ -57,8 +54,8 @@ class Root extends HookConsumerWidget {
             label: '3',
           ),
           NavigationDestination(
-            icon: Icon(Icons.home_outlined),
-            selectedIcon: Icon(Icons.home, color: Colors.white),
+            icon: Icon(Icons.settings_outlined),
+            selectedIcon: Icon(Icons.settings, color: Colors.white),
             label: '4',
           ),
         ],

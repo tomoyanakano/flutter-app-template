@@ -5,7 +5,6 @@ import 'package:flutter_app_template/src/features/auth/application/auth_service.
 import 'package:flutter_app_template/src/features/snack_bar/snack_bar_notifier.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-
 part 'sign_up_form_notifier.g.dart';
 
 @riverpod
@@ -24,8 +23,8 @@ class SignUpFormNotifier extends _$SignUpFormNotifier {
     try {
       state = const AsyncLoading();
       await authService.signUpWithEmailAndPassword(
-       email: email,
-       password: password,
+        email: email,
+        password: password,
       );
     } on Exception catch (e) {
       snackBarNotifier.setSnackBar(e.message);

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app_template/src/common_widgets/loading.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';

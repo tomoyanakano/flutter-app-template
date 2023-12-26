@@ -12,7 +12,7 @@ void main() {
     WidgetsFlutterBinding.ensureInitialized();
     await Firebase.initializeApp();
     await Future.wait([
-      // Firebase.initializeApp(),
+      Firebase.initializeApp(),
     ]);
     runApp(const ProviderScope(child: _MaterialApp()));
   }, (error, stackTrace) {

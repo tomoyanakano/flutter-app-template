@@ -175,9 +175,11 @@ Refer to the [Flutter Project Structure / Code with Andrea](https://codewithandr
 - Notification
 - Settings
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Downwards%20Button.png" alt="Downwards Button" width="30" height="30" /> Dependencies
-
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" alt="Man Technologist" width="30" height="30" /><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Woman%20Technologist.png" alt="Woman Technologist" width="30" height="30" /> Contributing
 
+Feel free to contribute to this project. Any contributions you make are **greatly appreciated**.
+
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Memo.png" alt="Memo" width="30" height="30" /> License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 

@@ -24,12 +24,12 @@ By editing the `dart_defines/dev.json` and `dart_defines/prod.json` files, you c
 
 ```json
 {
-  "flavor": "dev", // flavor name
-  "appName": "tomoyanakano - dev", // app name
-  "appIdSuffix": "dev", // app id suffix
-  "iOSBundleIdentifier": "com.tomoyanakano.dev", // iOS bundle identifier
-  "androidBundleIdentifier": "com.tomoyanakano.dev", // Android bundle identifier
-  "LaunchStoryboardName": "LaunchScreenDev" // Launch storyboard name
+  "flavor": "dev",
+  "appName": "tomoyanakano - dev",
+  "appIdSuffix": "dev",
+  "iOSBundleIdentifier": "com.tomoyanakano.dev",
+  "androidBundleIdentifier": "com.tomoyanakano.dev",
+  "LaunchStoryboardName": "LaunchScreenDev"
 }
 ```
 

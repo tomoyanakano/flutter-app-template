@@ -33,7 +33,7 @@ By editing the `dart_defines/dev.json` and `dart_defines/prod.json` files, you c
 ```
 
 >[!Warning]
-> `dart-define-from-file` is not supported after 3.17.0.
+> `dart-define-from-file` is not supported after 3.17.0
 > For more details, see the [issue](https://github.com/flutter/flutter/issues/138793).
 
 #### Generate App Icon

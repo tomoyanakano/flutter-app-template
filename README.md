@@ -1,9 +1,9 @@
-# flutter_app_template
+# <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Blue%20Heart.png" alt="Blue Heart" width="35" height="35" /> flutter_app_template
 
 A template for flutter app development with best practices and features.
 
 
-## Getting Started
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="30" height="30" /> Getting Started
 
 ### Clone the repository
 
@@ -33,10 +33,10 @@ By editing the `dart_defines/dev.json` and `dart_defines/prod.json` files, you c
 ```
 
 >[!Warning]
-> `dart-define-from-file` is not supported after 3.17.0
+> `dart-define-from-file` is not supported above 3.17.0
 > For more details, see the [issue](https://github.com/flutter/flutter/issues/138793).
 
-#### Generate App Icon
+### Generate App Icon
 
 Using [flutter_launcher_icons package](https://pub.dev/packages/flutter_launcher_icons), you can generate app icons for both iOS and Android.
 
@@ -56,7 +56,7 @@ Run the following command to generate app icons.
 flutter pub run flutter_launcher_icons:main
 ```
 
-#### Generate App Launch Storyboard
+### Generate App Launch Storyboard
 
 Using [flutter_native_splash package](https://pub.dev/packages/flutter_native_splash), you can generate launch storyboard for iOS.
 
@@ -79,7 +79,7 @@ Run the following command to generate launch storyboard.
 flutter pub run flutter_native_splash:create --flavors dev,prod  
 ```
 
-### Integrate with Firebase
+### Integrate with Firebase <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Fire.png" alt="Fire" width="25" height="25" />
 
 This template uses Firebase for backend services. To integrate Firebase with the app, follow the steps below.
 
@@ -103,7 +103,7 @@ flutter run --dart-define-from-file=dart_defines/dev.json // Develpment environm
 flutter run --dart-define-from-file=dart_defines/prod.json // Prod environment
 ```
 
-## Architecture
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" alt="Gear" width="30" height="30" /> Architecture
 
 ### Code Structure
 
@@ -167,7 +167,7 @@ lib
 
 Refer to the [Flutter Project Structure / Code with Andrea](https://codewithandrea.com/articles/flutter-project-structure/).
 
-## Built in Features
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png" alt="Sparkles" width="30" height="30" /> Built in Features
 
 - Authentication
 - Maintenance Mode
@@ -175,11 +175,9 @@ Refer to the [Flutter Project Structure / Code with Andrea](https://codewithandr
 - Notification
 - Settings
 
-## Dependencies
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Downwards%20Button.png" alt="Downwards Button" width="30" height="30" /> Dependencies
 
-## Contributing
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" alt="Man Technologist" width="30" height="30" /><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Woman%20Technologist.png" alt="Woman Technologist" width="30" height="30" /> Contributing
 
-Con
-
-## License
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Memo.png" alt="Memo" width="30" height="30" /> License
 

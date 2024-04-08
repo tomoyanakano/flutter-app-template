@@ -1,7 +1,6 @@
 {
   "flavor": "prod",
   "appName": "tomoyanakano",
-  "appIdSuffix": "prod",
   "iOSBundleIdentifier": "com.tomoyanakano.prod",
   "androidBundleIdentifier": "com.tomoyanakano.prod",
   "LaunchStoryboardName": "LaunchScreenProd"

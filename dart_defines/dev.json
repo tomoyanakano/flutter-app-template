@@ -1,8 +1,8 @@
 {
   "flavor": "dev",
   "appName": "tomoyanakano - dev",
-  "appIdSuffix": "dev",
-  "iOSBundleIdentifier": "com.tomoyanakano.dev",
-  "androidBundleIdentifier": "com.tomoyanakano.dev",
+  "appIdSuffix": ".dev",
+  "iOSBundleIdentifier": "com.tomoyanakano.template",
+  "androidBundleIdentifier": "com.tomoyanakano.template",
   "LaunchStoryboardName": "LaunchScreenDev"
 }

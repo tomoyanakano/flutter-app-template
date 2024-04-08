@@ -1,7 +1,7 @@
 {
   "flavor": "prod",
   "appName": "tomoyanakano",
-  "iOSBundleIdentifier": "com.tomoyanakano.prod",
-  "androidBundleIdentifier": "com.tomoyanakano.prod",
+  "iOSBundleIdentifier": "com.tomoyanakano.flutter_app_template",
+  "androidBundleIdentifier": "com.tomoyanakano.flutter_app_template",
   "LaunchStoryboardName": "LaunchScreenProd"
 }

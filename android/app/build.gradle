@@ -2,6 +2,7 @@ plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
 }
 
 def localProperties = new Properties()
@@ -37,6 +38,7 @@ task copySources(type: Copy) {
    from "src/${dartDefines.flavor}/res"
    into 'src/main/res'
 }
+
 tasks.whenTaskAdded { task ->
    task.dependsOn copySources
 }
@@ -79,7 +81,9 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        applicationIdSuffix "${dartDefines.appIdSuffix}"
+        if (dartDefines.appIdSuffix != null) {
+            applicationIdSuffix "${dartDefines.appIdSuffix}"
+        }
         resValue "string", "app_name", "${dartDefines.appName}"
     }
 

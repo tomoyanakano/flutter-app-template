@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_template/src/theme/theme.dart';
 import 'dart:async';
 import 'package:flutter_app_template/src/utilities/logger/logger.dart';
-// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_app_template/src/router/router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 void main() {
   runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp();
     await Future.wait([
       Firebase.initializeApp(),
     ]);

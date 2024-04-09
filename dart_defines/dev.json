@@ -1,8 +1,8 @@
 {
   "flavor": "dev",
   "appName": "tomoyanakano - dev",
-  "appIdSuffix": "dev",
-  "iOSBundleIdentifier": "com.tomoyanakano.dev",
-  "androidBundleIdentifier": "com.tomoyanakano.dev",
+  "appIdSuffix": ".dev",
+  "iOSBundleIdentifier": "com.tomoyanakano.flutter_app_template",
+  "androidBundleIdentifier": "com.tomoyanakano.flutter_app_template",
   "LaunchStoryboardName": "LaunchScreenDev"
 }

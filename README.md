@@ -25,7 +25,7 @@ By editing the `dart_defines/dev.json` and `dart_defines/prod.json` files, you c
 {
   "flavor": "dev",
   "appName": "tomoyanakano - dev",
-  "appIdSuffix": "dev",
+  "appIdSuffix": ".dev",
   "iOSBundleIdentifier": "com.tomoyanakano.dev",
   "androidBundleIdentifier": "com.tomoyanakano.dev",
   "LaunchStoryboardName": "LaunchScreenDev"
